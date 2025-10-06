@@ -1,0 +1,30 @@
+.years-dropdown {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    overflow-y: auto;
+    width: 100px;
+    z-index: 100;
+}
+
+.year-item {
+    padding: 6px 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-align: center;
+}
+
+.year-item:hover {
+    background-color: #f3f4f6; /* light gray hover */
+}
+
+.year-item.selected {
+    background-color: #2563eb; /* blue highlight */
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+}
